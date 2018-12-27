@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ Урок 1</title>
+    <link rel="stylesheet" href="style.css"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<div class="homework__content">
+    <h1>Задание №1</h1>
+    <button onclick="homework__function__01()">Запустить задание №1</button>
+    <script>
+        function homework__function__01() {
+            var Tc = prompt("Введите температуру по Цельсию");
+            var Tf = (9 / 5) * Tc + 32;
+            alert("Температура по Фаренгейту: " + Tf);
+        }
+    </script>
+</div>
+<div class="homework__content">
+    <h1>Задание №3</h1>
+    <button onclick="homework__function__03()">Запустить задание №3</button>
+    <script>
+        function homework__function__03() {
+            var admin;
+            var name = "Василий";
+            admin = name;
+            alert(admin);
+        }
+    </script>
+</div>
+<div class="homework__content">
+    <h1>Задание №4</h1>
+    <p></p>
+    <button onclick="homework__function__04()">Запустить задание №4</button>
+    <script>
+        function homework__function__04() {
+            alert(1000 + "108");
+        }
+    </script>
+</div>
+
+</html>
