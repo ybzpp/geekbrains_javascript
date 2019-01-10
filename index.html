@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ Урок 1</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<div class="homework__content homework__content__01">
+    <h1>Задание №1</h1>
+    <div class="containers__block">
+        <div class="container__left">
+            <p>var a = 1, b = 1, c, d;
+                <br>c = ++a; alert(c); // 2
+                <br>d = b++; alert(d); // 1
+                <br>c = (2+ ++a); alert(c); // 5
+                <br>d = (2+ b++); alert(d); // 4
+                <br>alert(a); // 3
+                <br>alert(b); // 3</p>
+        </div>
+        <div class="container__right">
+            <p>Постфиксная форма i++ отличается от префиксной ++i тем, что возвращает старое значение,
+                <br>бывшее до увеличения.</p>
+        </div>
+    </div>
+</div>
+<div class="homework__content">
+    <h1>Задание №2</h1>
+    <button onclick="homework__function__02()">Запустить задание №2</button>
+    <script>
+        function homework__function__02() {
+            var a = 2;
+            var x = 1 + (a *= 2);
+            alert(x);
+        }
+    </script>
+</div>
+<div class="homework__content homework__content__03">
+    <h1>Задание №3</h1>
+    <p></p>
+    <button onclick="homework__function__03()">Запустить задание №3 </button>
+    <script>
+        function homework__function__03() {
+            var a = +prompt('Введите a: ');
+            var b = +prompt('Введите b: ');
+            var c;
+            switch (true) {
+            case (a >= 0 && b >= 0):
+                c = a - b;
+                alert('a и b положительные, a-b = ' + c);
+                break;
+            case (a < 0 && b < 0):
+                c = a * b;
+                alert('a и b отрицательные, a*b = ' + c);
+                break;
+            case (a < 0 && b >= 0):
+                c = +a + +b;
+                alert('a отрицательный, b положительный , a+b = ' + c);
+                break;
+            case (a >= 0 && b < 0):
+                c = +a + +b;
+                alert('a положительный, b отрицательный , a+b = ' + c);
+                break;
+            default:
+                alert('Вы ввели не число C:');
+            }
+        }
+    </script>
+</div>
+<div class="homework__content homework__content__04">
+    <h1>Задание №4</h1>
+    <p>* Ввывод значений идёт в консоль *</p>
+    <button onclick="homework__function__04()">Запустить задание №4
+        <br>со случайным числом</button>
+    <button onclick="homework__function__04_1()">Запустить задание №4
+        <br>с заданным числом</button>
+    <script>
+        function homework__function__04() {
+            function randomInteger(min, max) {
+                var rand = min - 0.5 + Math.random() * (max - min + 1)
+                rand = Math.round(rand);
+                return rand;
+            }
+            var a = randomInteger(0, 15);
+            console.log('Случайное число: ' + a);
+            switch (a) {
+            case 0:
+                console.log('0');
+            case 1:
+                console.log('1');
+            case 2:
+                console.log('2');
+            case 3:
+                console.log('3');
+            case 4:
+                console.log('4');
+            case 5:
+                console.log('5');
+            case 6:
+                console.log('6');
+            case 7:
+                console.log('7');
+            case 8:
+                console.log('8');
+            case 9:
+                console.log('9');
+            case 10:
+                console.log('10');
+            case 11:
+                console.log('11');
+            case 12:
+                console.log('12');
+            case 13:
+                console.log('13');
+            case 14:
+                console.log('14');
+            case 15:
+                console.log('15');
+                break;
+            default:
+                console.log('Ошибка!');
+            }
+        }
+
+        function homework__function__04_1() {
+            var a = +prompt('Введите число в промежутке [0..15]');
+            switch (a) {
+            case 0:
+                console.log('0');
+            case 1:
+                console.log('1');
+            case 2:
+                console.log('2');
+            case 3:
+                console.log('3');
+            case 4:
+                console.log('4');
+            case 5:
+                console.log('5');
+            case 6:
+                console.log('6');
+            case 7:
+                console.log('7');
+            case 8:
+                console.log('8');
+            case 9:
+                console.log('9');
+            case 10:
+                console.log('10');
+            case 11:
+                console.log('11');
+            case 12:
+                console.log('12');
+            case 13:
+                console.log('13');
+            case 14:
+                console.log('14');
+            case 15:
+                console.log('15');
+                break;
+            default:
+                console.log('Ошибка!');
+            }
+        }
+    </script>
+</div>
+<div class="homework__content homework__content__05">
+    <h1>Задание №5</h1>
+    <button onclick="homework__function__05()">Запустить задание №5</button>
+    <script>
+        function homework__function__05() {
+            var a = +prompt('Введите первое число');
+            var b = +prompt('Введите второе число');
+            var c = prompt('Введите арифметический знак', '+, -, *, /');
+
+            function sum(a, b) {
+                return a + b;
+            }
+
+            function difference(a, b) {
+                return a - b;
+            }
+
+            function multiplication(a, b) {
+                return a * b;
+            }
+
+            function division(a, b) {
+                return a / b;
+            }
+
+            function calculator() {
+                if (c == "+" || c == "-" || c == "*" || c == "/") {
+                    return true;
+                }
+                else {
+                    alert('Арифметический знак некорректен');
+                }
+            }
+            if (calculator()) {
+                if (c == "+") {
+                    alert(sum(a, b));
+                }
+                else if (c == "-") {
+                    alert(difference(a, b));
+                }
+                else if (c == "*") {
+                    alert(multiplication(a, b));
+                }
+                else {
+                    alert(division(a, b));
+                }
+            }
+            else {
+                alert('Ошибка!');
+            }
+        }
+    </script>
+</div>
+<div class="homework__content homework__content__06">
+    <h1>Задание №6</h1>
+    <button onclick="homework__function__06()">Запустить задание №6</button>
+    <script>
+        function homework__function__06() {
+            function sum(a, b) {
+                return a + b;
+            }
+
+            function difference(a, b) {
+                return a - b;
+            }
+
+            function multiplication(a, b) {
+                return a * b;
+            }
+
+            function division(a, b) {
+                return a / b;
+            }
+            var arg1 = +prompt('Введите первое число');
+            var arg2 = +prompt('Введите второе число');
+            var operation = prompt('Введите арифметическую операцию', 'Сложение, Вычитание, Умножение или Деление')
+
+            function mathOperation(arg1, arg2, operation) {
+                switch (operation) {
+                case 'Сложение':
+                    return sum(arg1, arg2);
+                    break;
+                case 'Вычитание':
+                    return difference(arg1, arg2);
+                    break;
+                case 'Умножение':
+                    return multiplication(arg1, arg2);
+                    break;
+                case 'Деление':
+                    return division(arg1, arg2);
+                    break;
+                default:
+                    return 'Ошибка'
+                }
+            }
+            alert(mathOperation(arg1, arg2, operation));
+        }
+    </script>
+</div>
+<div class="homework__content homework__content__07">
+    <h1>Задание №7</h1>
+    <div class="containers__block">
+        <div class="container__left">
+            <p>typeof 0 // "number"
+                <br>typeof null // "object" </p>
+        </div>
+        <div class="container__right">
+            <p>Результат typeof null == "object" – это официально признанная ошибка в языке, которая сохраняется для совместимости. На самом деле null –
+                <br>это не объект, а отдельный тип данных.</p>
+        </div>
+    </div>
+</div>
+<div class="homework__content homework__content__08">
+    <h1>Задание №8</h1>
+    <button onclick="homework__function__08()">Запустить задание №8</button>
+    <script>
+        function homework__function__08() {
+            var a = +prompt('Введите число');
+            var b = +prompt('Введите степень');
+
+            function power(val, pow) {
+                if (pow != 1) {
+                    return val * power(val, pow - 1);
+                }
+                else {
+                    return val;
+                }
+            }
+            alert(a + ' в степени ' + b + ' = ' + power(a, b));
+        }
+    </script>
+</div>
+
+</html>

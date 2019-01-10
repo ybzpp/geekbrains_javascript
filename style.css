@@ -1,0 +1,62 @@
+.homework__content {
+    font-family: 'Roboto', sans-serif;
+    background-color: #c9d7e5;
+    opacity: 1;
+    width: 600px;
+    border-bottom: 2px solid;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 50px;
+    width: 300px;
+}
+
+.container__right {
+    background-color: #f9f2f4;
+    width: 380px;
+    margin: 5px;
+}
+
+.container__left {
+    background-color: #f9f2f4;
+    width: 200px;
+    margin: 5px;
+}
+
+.container__left p {
+    text-transform: lowercase;
+    color: #c7254e;
+    text-align: left;
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.container__right p {
+    padding: 4px 10px;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.homework__content__04 button {
+    width: 200px;
+}
+
+.homework__content__04 p {
+    color: #c7254e;
+}
+
+.containers__block {
+    display: flex;
+  justify-content: space-between;
+}
