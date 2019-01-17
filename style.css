@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content {
+    width: 350px;
+    padding: 0;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.homework__content {
+    background-color: #f3f3f3;
+    opacity: 1;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    outline: 1px solid lightgray;
+}
+
+.homework__content:nth-child(2n){
+    
+    background-color: #e2e2e2;
+}
+
+.homework__content:hover {
+    outline: 1px solid black;
+}
+
+button {
+    height: 50px;
+    width: 250px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    font-size: 14px;
+    background-color: whitesmoke;
+    animation-delay: 2s;
+}
+
+button:hover {
+    background-color: #ededed;
+}
+
+.container__right {
+    background-color: #f9f2f4;
+    width: 380px;
+    margin: 5px;
+}
+
+.container__left {
+    background-color: #f9f2f4;
+    width: 200px;
+    margin: 5px;
+}
+
+.container__left p {
+    text-transform: lowercase;
+    color: #c7254e;
+    text-align: left;
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.container__right p {
+    padding: 4px 10px;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.homework__content__04 button {
+    width: 200px;
+}
+
+.homework__content p {
+    color: #c7254e;
+}
+
+.containers__block {
+    display: flex;
+    justify-content: space-between;
+}
