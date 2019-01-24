@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: inline-block;
+    justify-content: center;
+}
+
+.big_picture_and_nav {
+    min-height: 484px;
+    min-width: 784px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left,
+#right {
+    width: 70px;
+    height: 480px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: darkgray;
+    background-color: lightgrey;
+}
+
+#left:hover,
+#right:hover {
+    color: black;
+}
+
+#left:active,
+#right:active {
+    background-color: #9d9d9d;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    min-width: 784px;
+}

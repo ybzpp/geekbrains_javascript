@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: inline-block;
+    justify-content: center;
+    width: 700px;
+}
+
+.big_picture_and_nav {
+    min-height: 484px;
+    min-width: 684px;
+    display: flex;
+    justify-content: center;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+}
